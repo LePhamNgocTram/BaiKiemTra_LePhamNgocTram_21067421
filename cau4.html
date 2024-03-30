@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 6 thực hành 2</title>
+    <link rel="stylesheet" href="/cau4.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <h1>Đăng Nhập</h1>
+                <p style="color: grey; text-align: center"> Đăng nhập vào đây bằng tên người dùng và mật khẩu của bạn </p>
+            </div>
+            <form action="#">
+                <div class="input-container">
+                    <label for="username">Tên đăng nhập</label>
+                    <div style="border: 1px solid rgb(169, 166, 166); width: 340px; background-color:white; margin-left: 25px;"> <img  width="15px" height="15px" src="/image/ảnh 1.4.png" style="margin-left: 5px;" alt="Nhập tên đăng nhập"><input type="text" id="username" name="username" placeholder="Nhập tên đăng nhập" style="width: 300px; border: 0px;"></div>
+                </div>
+                <div class="input-container">
+                    <label for="password">Mật khẩu</label>
+                    <div style="border: 1px solid rgb(169, 166, 166); width: 340px;background-color:white; margin-left: 25px;"> <img  width="15px" height="15px" src="image/ảnh 2.4.png" style="margin-left: 5px;" alt="Nhập mật khẩu"><input type="password" id="password" name="password" placeholder="Nhập mật khẩu" style="width: 280px; height: 24px; border: 0px;"><img  width="15px" height="15px" src="image/ảnh 3.4.png" style="margin-left: 1px; margin-top: 6px; padding-top: 6px;" alt="Nhập mật khẩu"></div>
+                </div>
+                <div class="button-container">
+                     <input type="submit" class="sub" value="Đăng nhập">
+                </div>
+                <div class="forgot-password">
+                    <a href="#">Quên mật khẩu?</a>
+                </div>
+                <div class="sign-up">
+                    <a href="#">Đăng ký<img  width="15px" height="15px" src="image/ảnh 4.4.png" style="margin-right: 5px;" alt="Đăng nhập"></a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const form = document.querySelector('form');
+        const usernameInput = document.querySelector('#username');
+        const passwordInput = document.querySelector('#password');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const username = usernameInput.value;
+            const password = passwordInput.value;
+        })
+            </script>
+</body>
+</html>

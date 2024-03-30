@@ -1,0 +1,99 @@
+body {
+    background-image: url(/image/ảnh\ nền\ bài\ 6.png);
+    background-size: cover;
+    font-family: sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0% auto;
+    
+}
+
+.form-container {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-image: url(/image/ảnh\ khung\ nền\ bài\ 6.png);
+    background-size: cover;
+}
+
+.form-header {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 1% auto;
+}
+
+.form-header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.input-container {
+    margin-bottom: 10px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-top: 10px;
+
+}
+
+.forgot-password a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sign-up {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.sign-up a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub:hover{
+    color: yellow;
+    background-color: blue;
+}
+.sub{
+    height: 40px;
+    width: 100px;
+}

@@ -1,0 +1,67 @@
+#danh-gia {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+#danh-gia h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#danh-gia ul {
+    list-style: none;
+    padding: 0;
+}
+
+#danh-gia ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#danh-gia ul li .avatar {
+    float: left;
+    margin-right: 10px;
+}
+
+#danh-gia ul li .avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#danh-gia ul li .noi-dung {
+    overflow: hidden;
+}
+
+#danh-gia ul li .noi-dung p {
+    margin-bottom: 5px;
+}
+
+#danh-gia ul li .noi-dung strong {
+    font-weight: bold;
+}
+
+#danh-gia form {
+    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 20px; 
+}
+
+#danh-gia form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px; 
+}
+
+#danh-gia form button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+}

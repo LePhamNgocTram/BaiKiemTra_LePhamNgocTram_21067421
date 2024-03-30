@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐÁNH GIÁ</title>
+    <link rel="stylesheet" href="cau1.css">
+</head>
+<body>
+    <div id="danh-gia">
+        <h3>ĐÓNG GÓP</h3>
+        <ul></ul>
+        <form>
+            <input type="text" id="name" placeholder="Tên của bạn...">
+            <input type="text" id="comment" placeholder="Viết bình luận của bạn...">
+            <button type="submit">Gửi</button>
+        </form>
+    </div>
+
+    <script>
+        const form = document.querySelector("#danh-gia form");
+        const ul = document.querySelector("#danh-gia ul");
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            const name = document.querySelector("#name").value;
+            const comment = document.querySelector("#comment").value;
+
+            const currentDate = new Date();
+            const timestamp = currentDate.toLocaleString();
+
+            const li = document.createElement("li");
+            li.innerHTML = `
+                <div class="noi-dung">
+                    <p><strong>${name}</strong>: ${comment}</p>
+                    <p><em>${timestamp}</em></p>
+                </div>
+            `;
+
+            ul.appendChild(li);
+            
+document.querySelector("#name").value = "";
+            document.querySelector("#comment").value = "";
+        });
+    </script>
+</body>
+</html>
